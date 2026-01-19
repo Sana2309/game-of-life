@@ -24,7 +24,7 @@ resource "aws_security_group" "alb_sg" {
 resource "aws_instance" "game_server" {
   ami                    = "ami-0f5ee92e2d63afc18"
   instance_type          = "t2.micro"
-  key_name               = "my-key"
+  key_name               = "new instance_key"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
