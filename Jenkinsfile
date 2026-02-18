@@ -27,6 +27,13 @@ pipeline {
         sh 'cd terraform && terraform apply -auto-approve'
       }
     }
-
+    stage('Debug') {
+    steps {
+        sh 'pwd'
+        sh 'ls -R'
+    }
+}
+  }
+}
   }
 }
