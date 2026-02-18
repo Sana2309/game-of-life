@@ -11,7 +11,8 @@ pipeline {
 
     stage('Build Docker Image') {
       steps {
-        sh 'docker build -t game-of-life .'
+        sh 'docker build -t game-of-life gameoflife-acceptance-tests/'
+
       }
     }
 
