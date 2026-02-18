@@ -5,7 +5,7 @@ pipeline {
 
     stage('Clone Code') {
       steps {
-        git 'https://github.com/USERNAME/game-of-life.git'
+        git 'https://github.com/Sana2309/game-of-life.git'
       }
     }
 
